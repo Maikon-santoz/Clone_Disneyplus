@@ -8,11 +8,26 @@
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__container">
+          <h1>
+            <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+          </h1>
+          <ul class="header__links">
+            <li class="header__links__item">
+              <a href="#" class="button button--secondary">Assine já</a>
+            </li>
+            <li class="header__links__item">
+              <a  href="#" class="button button--dark">Entrar</a>
+            </li>
+          </ul>
+      </div>
+    </header>
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__content__branding">
+        <div class="hero__content__branding">
           <img src="./dist/images/disneyplus.svg" alt="Disney+" />
-        </h1>
+        </div>
         <h3 class="title--small">As melhores historias em um só lugar.</h3>
         <p>
           <a href="#" class="link-text">Assinar o Disney+</a>
@@ -25,7 +40,7 @@
               src="/dist/images/logos/disney_star_plus.png"
               alt="Disney+ - start+"
             />
-            <button>Assine Agora</button>
+            <button class="button">Assine Agora</button>
             <span class="text">R$ 49,90/mês*</span>
           </li>
           <li class="hero__content__combos__combo">
@@ -33,7 +48,7 @@
               src="/dist/images/logos/disney_star_plus.png"
               alt="Disney+ - start+"
             />
-            <button>Assine Agora</button>
+            <button class="button">Assine Agora</button>
             <span class="text">R$ 49,90/mês*</span>
           </li>
         </ul>
@@ -164,7 +179,11 @@
       </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-      <img src="/dist/images/fundo_rei_leao.png" alt="rei leão">
+      
+      <picture>
+        <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+        <img src="/dist/images/fundo_rei_leao.png" alt="rei leão">
+      </picture>
       <div class="image-text-section__text__container image-text-section--image-full-width__text__container">
         <h2 class="title">Baixe filmes e séries</h2>
         <p class="text--big">
@@ -224,7 +243,44 @@
       <ul class="faq__questions">
         <li class="faq__questions__item">
           <div class="faq__questions__item__question" data-faq-question>
-            pergunta fi
+           Oque está incluido no Disney+?
+          </div>
+          <div class="faq__questions__item__answer text--big">
+            <p>
+              <span>Ao assinar o Combo+:</span>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  <span>O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="faq__questions__item">
+          <div class="faq__questions__item__question" data-faq-question>
+            pergunta 
           </div>
           <div class="faq__questions__item__answer text--big">
             a resposta 
@@ -232,7 +288,7 @@
         </li>
         <li class="faq__questions__item">
           <div class="faq__questions__item__question" data-faq-question>
-            pergunta fi
+            pergunta 
           </div>
           <div class="faq__questions__item__answer text--big">
             a resposta 
@@ -240,15 +296,7 @@
         </li>
         <li class="faq__questions__item">
           <div class="faq__questions__item__question" data-faq-question>
-            pergunta fi
-          </div>
-          <div class="faq__questions__item__answer text--big">
-            a resposta 
-          </div>
-        </li>
-        <li class="faq__questions__item">
-          <div class="faq__questions__item__question" data-faq-question>
-            pergunta fi
+            pergunta 
           </div>
           <div class="faq__questions__item__answer text--big">
             a resposta 
